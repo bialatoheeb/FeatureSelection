@@ -19,3 +19,4 @@ def glass_data():
     glass_url = 'http://archive.ics.uci.edu/ml/machine-learning-databases/glass/glass.data'
     df = pd.read_csv(glass_url, header=None,index_col=None)
     return df[df.columns[:-1]], df[df.columns[-1]]
+
